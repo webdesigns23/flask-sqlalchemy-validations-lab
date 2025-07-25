@@ -1,7 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import validates
 db = SQLAlchemy()
-from marshmallow import Schema, fields, ValidationError, validates_schema, validate
 
 class Author(db.Model):
     __tablename__ = 'authors'
